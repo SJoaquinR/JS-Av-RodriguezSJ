@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <script>
+    <script type="text/javascript">
       function sayHello() {
         alert("Hello World");
       }
+      document.write("Hello World")
     </script>
+    
   </head>
   <body>
+    Click here for the result
     <input type="button" onclick="sayHello()" value="Say Hello" />
+    En archivo:
+    <input type="button" onclick="sayHelloArchivo()" value="Say Hello en archivo" />
+    <script type="text/javascript" src="filename.js" ></script>
   </body>
 </html>

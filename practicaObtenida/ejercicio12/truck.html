@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="Vehicle.js" type="text/javascript"></script>
+    <script src="Truck.js" type="text/javascript"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>El camion tiene ruedas, velocidad maxima y capacidad de carga</h1>
+
+    <script type="text/javascript">
+      const truck = new Truck(8, 100, 3000);
+      document.write("Ruedas: " + truck.wheels + "<br>");
+      document.write("Velocidad maxima: " + truck.speed + "<br>");
+      document.write("Carga: " + truck.weight + "<br>");
+    </script>
+  </body>
+</html>
