@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Variables 2</title>
+    <script type="text/javascript">
+      var myVar = "global"; // Variable Global
+      
+      function checkscope( ) {
+        var myVar = "local"; // Variable Local
+        document.write(myVar);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Variables 2</h1>
+
+    <script type="text/javascript">
+        checkscope();
+    </script>
+
+  </body>
+</html>

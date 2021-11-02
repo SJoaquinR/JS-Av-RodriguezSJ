@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="Cuenta.js" charset="utf-8"></script>
+    <script src="CajaAhorro.js" type="text/javascript"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Caja de Ahorro</h1>
+    <script type="text/javascript">
+      let cajaAhorro = new CajaAhorro(3, 120.5, 2.3);
+
+      document.write("Valor original" + cajaAhorro);
+      document.write("<br>");
+
+      cajaAhorro.acredit(33);
+      document.write("Le sume 33" + cajaAhorro);
+      document.write("<br>");
+
+      cajaAhorro.debitar(58.5);
+      document.write("Le reste 58.5" + cajaAhorro);
+      document.write("<br>");
+
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("Le debito 100.5 y NO me tiene que dejar");
+      try {
+        cajaAhorro.debitar(100.5);
+      } catch (e) {
+        document.write("<br>");
+        document.write("Se produjo un error=");
+        document.write(e.message);
+      } finally {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+          document.write("el resultado luego de la operacion es");
+          document.write(cajaAhorro);
+      }
+    </script>
+  </body>
+</html>
