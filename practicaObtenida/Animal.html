@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="iso-8859-1">
+    <title>Herencia + Metodo</title>
+  </head>
+  <body>
+    <h1>Herencia + Metodo</h1>
+    <script type="text/javascript">
+      function Animal (nombre) {
+        this.nombre = nombre;
+      }
+      Animal.prototype.hablar = function () {
+        document.write('<br>' + this.nombre + 'hace un ruido.');
+      }
+      class Perro extends Animal {
+        hablar() {
+          super.hablar();
+          document.write('<br>' + this.nombre + ' ladra.');
+        }
+      }
+      var p = new Perro('Mitzie');
+      p.hablar();
+    </script>
+    <hr>
+  </body>
+</html>

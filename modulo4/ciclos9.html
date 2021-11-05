@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Ciclos 9</h1>
+
+    <script type="text/javascript">
+      document.write("Entering the loop!<br /> ");
+      outerloop: // El nombre del label
+      for (var i = 0; i < 3; i++)
+      {
+          document.write("Outerloop: " + i + "<br />");
+          for (var j = 0; j < 5; j++)
+          {
+              if (j == 3){
+              continue outerloop;
+          }
+          document.write("Innerloop: " + j + "<br />");
+          }
+      }
+      document.write("Exiting the loop!<br /> ");
+    </script>
+  </body>
+</html>
