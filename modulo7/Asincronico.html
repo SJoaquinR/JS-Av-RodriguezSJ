@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="iso-8859-1">
-    <title>PracticaJavaScript_7</title>
+    <meta charset="utf-8">
+    <title></title>
   </head>
   <body>
     <h1>Asincronico</h1>
     <script type="text/javascript">
-      setTimeout( () => {
+      setTimeout( () =>
+      {
         for( let i = 0; i < 2000000000; i++ ) {}
-        document.write( '<hr>Funcion 1 ok' );
-        console.log( '<hr>Funcion 1 ok' );
-      }, 10 );
-      setTimeout( () => {
-        document.write( '<hr>Funcion 2 ok' );
-        console.log( '<hr>Funcion 2 ok' );
+        document.write( '<br/>Done delaying' );
       }, 0 );
+
+      setTimeout( () => { document.write( '<br/><br/>Done!' ) }, 0 );
     </script>
   </body>
 </html>

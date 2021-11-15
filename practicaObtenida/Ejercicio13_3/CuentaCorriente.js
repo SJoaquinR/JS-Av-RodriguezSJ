@@ -22,10 +22,17 @@ class CuentaCorriente extends Cuenta
     {
       document.write("</br>");
       document.write("</br>CC: Saldo no disponible");
+      new Error(`Saldo insuficiente`)
     }
     else
     {
       this.saldo -= importe;
     }
+  }
+
+  toString()
+  {
+    return super.toString() +
+           "<br/>descubierto=" + this.descubierto;
   }
 }
